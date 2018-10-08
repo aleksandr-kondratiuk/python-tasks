@@ -21,8 +21,13 @@ n = input('Введите N')
 m = input('Введите M')
 
 if x > y:
-    print('test')
+    len_from_x = n
+    len_from_y = m
+
+
 elif x < y:
-    print('test')
+    len_from_y = n
+    len_from_x = m
+
 else:
     print('test')
