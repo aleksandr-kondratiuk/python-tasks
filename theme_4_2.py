@@ -14,20 +14,41 @@
 
 # Перед решением задачи нарисуйте ее
 
-x = input('Введите X')
-y = input('Введите Y')
+x = int(input('Введите x '))
+y = int(input('Введите y '))
 
-n = input('Введите N')
-m = input('Введите M')
+n = int(input('Введите n '))
+m = int(input('Введите m '))
 
 if x > y:
-    len_from_x = n
-    len_from_y = m
+    if y > n and x > m:
+        distance_to_x = n
+        distance_to_y = m
 
+        half_to_x = int(y / 2)
+        half_to_y = int(x / 2)
 
+        if half_to_x > distance_to_x:
+            nearest_to_x = distance_to_x
+        else:
+            nearest_to_x = y - distance_to_x
+
+        if half_to_y > distance_to_y:
+            nearest_to_y = distance_to_y
+        else:
+            nearest_to_y = x - distance_to_y
+
+        if nearest_to_x > nearest_to_y:
+            print(nearest_to_y)
+        else:
+            print(nearest_to_x)
+
+        print(distance_to_x, distance_to_y, half_to_x, half_to_y)
+    else:
+        print('Вася должен быть в бассейне!')
 elif x < y:
-    len_from_y = n
-    len_from_x = m
+    distance_to_x = m
+    distance_to_y = n
 
 else:
     print('test')
