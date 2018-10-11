@@ -19,8 +19,8 @@ if x > y:
         distance_to_x = n
         distance_to_y = m
 
-        half_to_x = int(y / 2)
-        half_to_y = int(x / 2)
+        half_to_x = y / 2
+        half_to_y = x / 2
 
         if half_to_x > distance_to_x:
             nearest_to_x = distance_to_x
