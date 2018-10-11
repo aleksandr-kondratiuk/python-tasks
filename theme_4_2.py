@@ -36,8 +36,6 @@ if x > y:
             print(nearest_to_y)
         else:
             print(nearest_to_x)
-
-        print(distance_to_x, distance_to_y, half_to_x, half_to_y)
     else:
         print('Вася должен быть в бассейне!')
 else:
